@@ -1,0 +1,53 @@
+// Style for the container
+.todo-container {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #474eb2;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: -4px 1px 25px 0px rgba(114, 118, 183, 0.75);
+  -webkit-box-shadow: -4px 1px 25px 0px rgba(51, 40, 168, 0.75);
+  -moz-box-shadow: -4px 1px 25px 0px rgba(22, 31, 111, 0.75);
+
+}
+
+// Style for the task list
+.task-list {
+  list-style: none;
+  padding: 0;
+  overflow: scroll;
+
+}
+
+// Style for the task items
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  overflow: scroll;
+
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+// Style for the delete button
+.delete-btn {
+  background-color: #7872b7;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+// Hover for the delete button
+.delete-btn:hover {
+  background-color: #eee;
+}
