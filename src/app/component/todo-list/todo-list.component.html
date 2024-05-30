@@ -1,0 +1,12 @@
+<div class="todo-container">
+    <h2>My Note list</h2>
+    <ul class="task-list">
+        <li *ngFor="let item of todoList let i=index" class="task-item"   >
+            <input type="checkbox" [checked]="item.completed" (change)="toggleCompletion(item.id)">
+            <span class="task-name"[class.completed]="item.completed">{{ item.task }}</span>
+            <button class="delete-btn" (click)="deleteTask(i)">Delete</button>
+        </li>
+    </ul>
+</div>
+
+
